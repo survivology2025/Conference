@@ -10,9 +10,10 @@
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="brand">Survivology<span class="accent">Con</span></a>
-      <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="schedule.html" class="active">Schedule</a>
+      <button id="nav-toggle" aria-label="Toggle navigation" aria-controls="main-nav" aria-expanded="false">☰</button>
+      <nav id="main-nav" class="main-nav" role="navigation" role="navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="schedule.html">Schedule</a>
         <a href="speakers.html">Speakers</a>
         <a href="venue.html">Venue</a>
         <a href="contact.html">Contact</a>
@@ -68,5 +69,6 @@
   </footer>
 
   <script>document.getElementById('year2').textContent = new Date().getFullYear()</script>
+  <script src="js/main.js"></script>
 </body>
 </html>
