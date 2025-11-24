@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#a4c39a"/>
+      <stop offset="1" stop-color="#d6a77a"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g)"/>
+  <g fill="#043022" font-family="Arial, Helvetica, sans-serif" font-weight="700">
+    <text x="60" y="140" font-size="64">Survivology</text>
+    <text x="60" y="210" font-size="28">Climate Fiction & Speculative Futures</text>
+    <text x="60" y="260" font-size="20">19–21 December 2025 — Kolkata</text>
+  </g>
+</svg>

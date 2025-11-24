@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Venue — Survivology</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .venue-card { 
+      background: #fff; 
+      padding:18px; 
+      border-radius:12px; 
+      box-shadow:0 8px 24px rgba(0,0,0,0.06); 
+      margin-bottom:18px; 
+    }
+    .map-embed { 
+      width:100%; 
+      height:360px; 
+      border:0; 
+      border-radius:8px; 
+      overflow:hidden; 
+    }
+    .venue-meta { 
+      display:flex; 
+      gap:18px; 
+      flex-wrap:wrap; 
+      align-items:flex-start; 
+    }
+    .venue-meta div { 
+      flex:1; 
+      min-width:220px; 
+    }
+    .venue-meta p { 
+      margin:6px 0; 
+    }
+    .muted { 
+      color: #6b7280; 
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Survivology<span class="accent">Con</span></a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="speakers.html">Speakers</a>
+        <a href="venue.html" class="active">Venue</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container venue">
+    <h1>Venue & Directions</h1>
+    <p>Survivology will take place across two campuses in Kolkata:</p>
+
+    <!-- IIM Calcutta -->
+    <section class="venue-card">
+      <h2>19–20 December 2025 — Indian Institute of Management Calcutta (IIMC), Joka</h2>
+      <div class="venue-meta">
+        <div>
+          <h3>Address</h3>
+          <p><strong>Indian Institute of Management Calcutta (IIM Calcutta)</strong><br>
+          Diamond Harbour Road (near Joka), Kolkata — Postal details and contacts available on the institute website.</p>
+        </div>
+
+        <div>
+          <h3>Nearest metro & route</h3>
+          <p><strong>Nearest metro station:</strong> <em>Joka Metro Station</em> (Purple Line) — approx. 2–4 km from IIMC. Autos and taxis are available from the station. Public buses also connect from Behala, Taratala, and Tollygunge.</p>
+        </div>
+      </div>
+
+      <h3 style="margin-top:12px">Map</h3>
+
+      <iframe 
+        class="map-embed" 
+        src="https://www.google.com/maps?q=IIM+Calcutta+Joka+Kolkata&output=embed" 
+        allowfullscreen="" loading="lazy">
+      </iframe>
+
+      <h3 style="margin-top:12px">Quick routes</h3>
+      <ul>
+        <li>From Howrah Railway Station: Taxi or cab via Vidyasagar Setu → Diamond Harbour Road (approx 1–1.5 hrs).</li>
+        <li>From Kolkata Airport: Taxi via EM Bypass → Taratala → Diamond Harbour Road (60–90 mins).</li>
+      </ul>
+    </section>
+
+    <!-- Jadavpur University -->
+    <section class="venue-card">
+      <h2>21 December 2025 — Jadavpur University (Main Campus)</h2>
+      <div class="venue-meta">
+        <div>
+          <h3>Address</h3>
+          <p><strong>Jadavpur University — Main Campus</strong><br>
+          188 Raja S. C. Mallick Road, Kolkata 700032, West Bengal, India.</p>
+        </div>
+
+        <div>
+          <h3>Nearest metro & route</h3>
+          <p><strong>Nearest Metro Stations:</strong> <em>Rabindra Sarobar</em> (Lake) and <em>Tollygunge</em>. From either station, take an auto-rickshaw or taxi to Jadavpur University (10–20 minutes).</p>
+        </div>
+      </div>
+
+      <h3 style="margin-top:12px">Map</h3>
+
+      <iframe 
+        class="map-embed" 
+        src="https://www.google.com/maps?q=Jadavpur+University+Main+Campus+Kolkata&output=embed" 
+        allowfullscreen="" loading="lazy">
+      </iframe>
+
+      <h3 style="margin-top:12px">Quick routes</h3>
+      <ul>
+        <li>From Sealdah Railway Station: Taxi or metro to Tollygunge → auto to Jadavpur (30–45 mins).</li>
+        <li>From Howrah: Taxi directly, or take a train to Sealdah then proceed via metro/auto.</li>
+      </ul>
+    </section>
+
+    <p class="muted">
+      If you want, I can replace the map queries with the official Google Maps *Embed codes* 
+      (copy-paste from Google Maps → Share → Embed a Map).
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Survivology.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
