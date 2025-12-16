@@ -5,13 +5,35 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Schedule — Survivology</title>
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Layout tweaks just for the schedule page */
+    .schedule-placeholder ul > li {
+      margin-bottom: 10px;
+    }
+    .schedule-placeholder ul > li:last-child {
+      margin-bottom: 0;
+    }
+    .schedule-placeholder ul ul {
+      margin: 6px 0 14px 24px;
+      padding-left: 0;
+    }
+    .schedule-placeholder ul ul li {
+      font-size: 0.95rem;
+      margin-bottom: 4px;
+    }
+    .schedule-speakers {
+      display: block;
+      margin-top: 2px;
+      color: var(--muted);
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="brand">Survivology<span class="accent">Con</span></a>
       <button id="nav-toggle" aria-label="Toggle navigation" aria-controls="main-nav" aria-expanded="false">☰</button>
-      <nav id="main-nav" class="main-nav" role="navigation" role="navigation">
+      <nav id="main-nav" class="main-nav" role="navigation">
         <a href="index.html" class="active">Home</a>
         <a href="schedule.html">Schedule</a>
         <a href="speakers.html">Speakers</a>
@@ -23,84 +45,306 @@
 
   <main class="container">
     <h1>Schedule</h1>
-    
-    <p><strong>Provisional Programme</strong></p>
-
     <section class="schedule-placeholder">
+
+      <!-- DAY 1 -->
       <article class="day-card">
-        <h3>Friday, 19 December 2025</h3>
+        <h3>Day 1 — Friday, 19 December 2025</h3>
+        <p class="muted">Amphitheatre East 150, New Academic Block, IIM Calcutta</p>
         <ul>
           <li><strong>10-1030</strong> — Registration</li>
-          <li><strong>1030-1045</strong> — Welcome addresses</li>
-          <li><strong>1045-1145</strong> — <strong>Plenary Panel 1: Cli-fi hanger</strong><br/><strong>Gautam Bhatia, Samit Basu, Lavanya Lakshminarayan</strong><br/><em>Moderator: Pragyan Rath</em></li>
-          <li><strong>1145-12</strong> — Coffee</li>
-          <li><strong>12-130</strong> — <em>Paper Sessions</em>
-            <ul style="margin-top: 8px; margin-bottom: 8px;">
-              <li style="margin-left: 20px;">Paper Session 1a: three papers</li>
-              <li style="margin-left: 20px;">Paper Session 1b: three papers</li>
-              <li style="margin-left: 20px;">Paper Session 1c: three papers</li>
+
+          <li><strong>1030-11</strong> — Welcome addresses</li>
+
+          <li>
+            <strong>11-12</strong> — <strong>Panel 1: Writing Climate</strong>
+            <span class="schedule-speakers">
+              <strong>Anil Menon, Gautam Bhatia, Samit Basu</strong><br/>
+              <em>Moderator: Pragyan Rath, IIM Calcutta</em>
+            </span>
+          </li>
+
+          <li><strong>12</strong> — Coffee</li>
+
+          <li>
+            <strong>1215-130</strong> — <em>Session 1A: Amphitheatre East 150</em>
+            <ul>
+              <li><strong>Arya Raja, Jamia Milia Islamia New Delhi</strong><br/>
+              Transcorporeal “Technologies” for an Eco-Ethical ‘Self:’ Beyond Climate Catastrophe in Vandana Singh's “Reunion”</li>
+
+              <li><strong>Ankit Prasad, EFLU Hyderabad</strong><br/>
+              Persistent Utopias in Vandana Singh's Climate Fiction</li>
+
+              <li><strong>Masuma Khatun, CSSS Calcutta</strong><br/>
+              Marginal Resistance: Decolonial Climate Imagination in Vandana Singh's Postcolonial Science Fiction</li>
+
+              <li><em>Chair: Abhijit Gupta, Jadavpur University</em></li>
             </ul>
           </li>
+
+          <li>
+            <strong>1215-130</strong> — <em>Session 1B: Amphitheatre East 100</em>
+            <ul>
+              <li><strong>Sudeshna Rana, Independent Writer and Researcher, Dhanbad</strong><br/>
+              The Coalfields in Fiction: Tracing the Textual Trail in Regional Literature</li>
+
+              <li><strong>Raju Ray and Madhumita Roy, IIEST Shibpur</strong><br/>
+              The Speculative Futures in Indian Climate Fiction: A Study of Samit Basu's The City Inside</li>
+
+              <li><strong>Debasmita Sarkar, Shri Ramasamy Memorial University, Sikkim</strong><br/>
+              The Root-Bridge Imagination: Indigenous Eco-Engineering and Speculative Survivology in P. Mario K. Kmenlang Pathaw's Tynrai (Roots)</li>
+
+              <li><em>Chair: Doyeeta Majumder, Jadavpur University, Kolkata</em></li>
+            </ul>
+          </li>
+
           <li><strong>130-230</strong> — Lunch</li>
-          <li><strong>230-315</strong> — <strong>Keynote 1:</strong> <strong>Sami Ahmad Khan</strong><br/><em>Discussant: Arunima Chakraborty</em></li>
-          <li><strong>315-4</strong> — <strong>Keynote 2:</strong> <strong>Francesco Verso</strong><br/><em>Discussant: Dip Ghosh</em></li>
-          <li><strong>4-415</strong> — Tea</li>
-          <li><strong>4 onwards</strong> — <strong>Writing masterclass</strong> with <strong>Gautam Bhatia</strong> <span style="color: var(--muted);">[limited places; may spill over to next session]</span></li>
-          <li><strong>4 onwards</strong> — <strong>Zombie apocalypse workshop</strong> with <strong>Sami Ahmed Khan</strong> <span style="color: var(--muted);">[limited places; may result in end of civilization as we know it]</span></li>
-          <li><strong>515-645</strong> — <strong>Screening:</strong> <strong>Kalpavigyan: A Speculative Journey (2021)</strong> | <span style="color: var(--muted);">82 mins. Directed and written by Arunava Gangopadhyay and Bodhisattva Chattopadhyay</span></li>
-          <li><strong>7 onwards</strong> — <strong>Conference dinner</strong></li>
+
+          <li>
+            <strong>230-315</strong> — <strong>Keynote 1: Sami Ahmad Khan, Jawaharlal Nehru University, New Delhi</strong>
+            <span class="schedule-speakers">
+              At the End(s) of the World(s): Global Climate Change and CBRN Warfare in Select Indian Web Series<br/>
+              <em>Discussant: Arunima Chakraborty, IIMC Calcutta</em>
+            </span>
+          </li>
+
+          <li>
+            <strong>315-4</strong> — <strong>Keynote 2: Francesco Verso, Future Fiction</strong>
+            <span class="schedule-speakers">
+              <em>Discussant: Dip Ghosh, Kalpabiswa, Calcutta</em>
+            </span>
+          </li>
+
+          <li><strong>4</strong> — Tea</li>
+
+          <li>
+            <strong>430</strong> — <strong>Writing masterclass with Gautam Bhatia</strong>
+            <span class="schedule-speakers">
+              <span style="color: var(--muted);">[limited places; may spill over to next session]</span><br/>
+              <span style="color: var(--muted);">Amphitheatre East 150</span>
+            </span>
+          </li>
+
+          <li>
+            <strong>430-515</strong> — <strong>Keynote 3: Suparno Banerjee, Texas State University</strong>
+            <span class="schedule-speakers">
+              ‘Anxieties of a Bodily Kind: Climate Change and Post-COVID Speculative Narratives from India’<br/>
+              <em>Discussant: Francesco Verso</em>
+            </span>
+          </li>
+
+          <li>
+            <strong>515-6</strong> — <strong>Panel 2: Launch of The Speculative Route: Futures from South and Southwest Asia and North Africa, eds. Merve Tabur, Sami Ahmad Khan</strong>
+            <span class="schedule-speakers">
+              <strong>Sami Ahmad Khan, Suparno Banerjee, Samit Basu</strong>
+            </span>
+          </li>
+
+          <li>
+            <strong>7</strong> — Conference dinner for registered and invited participants
+          </li>
         </ul>
       </article>
 
+      <!-- DAY 2 -->
       <article class="day-card">
-        <h3>Saturday, 20 December 2025</h3>
+        <h3>Day 2 — Saturday, 20 December 2025</h3>
+        <p class="muted">Amphitheatre East 150, New Academic Block, IIM Calcutta</p>
         <ul>
-          <li><strong>10-11</strong> — <strong>Climate Comix and Games:</strong> <strong>Appupen, and Nandita Roy</strong> <span style="color: var(--muted);">[To continue as workshop; limited places]</span></li>
-          <li><strong>11-1145</strong> — <strong>Keynote 2:</strong> <strong>Rajat Chaudhuri</strong><br/><em>Discussant: Devi Vijay</em></li>
+          <li>
+            <strong>1015-11</strong> — <strong>Panel 3: Climate Comix and Games</strong>
+            <span class="schedule-speakers">
+              <strong>Appupen, comics artist</strong><br/>
+              <em>Discussant: Nandita Roy, IIM Calcutta</em>
+            </span>
+          </li>
+
+          <li>
+            <strong>11-1145</strong> — <strong>Keynote 4: Rajat Chaudhuri, novelist</strong>
+            <span class="schedule-speakers">
+              'Fevers and Forking Paths -- Pathways, Pandemics and Future Histories in The Butterfly Effect and Survive the Century.'<br/>
+              <em>Discussant: Devi Vijay, IIM Calcutta</em>
+            </span>
+          </li>
+
           <li><strong>1145-12</strong> — Coffee</li>
-          <li><strong>12-130</strong> — <em>Paper Sessions</em>
-            <ul style="margin-top: 8px; margin-bottom: 8px;">
-              <li style="margin-left: 20px;">Paper Session 3a: three papers</li>
-              <li style="margin-left: 20px;">Paper Session 3b: three papers</li>
-              <li style="margin-left: 20px;">Paper Session 3c: three papers</li>
+
+          <li>
+            <strong>12-130</strong> — <em>Session 2A: Amphitheatre East 150</em>
+            <ul>
+              <li><strong>Devika Aji, Jawaharlal Nehru University, New Delhi</strong><br/>
+              Water You Doing? : Who is the Alien(s) in Gaganachari (2024)</li>
+
+              <li><strong>Dileep Kumar C T, St. Jospeh's College Devagiri, Kozhikode</strong><br/>
+              From Ruined Earth to Imagined Futures: Wayanad's Landslide, Survivology and Climate Storytelling in Gun Island</li>
+
+              <li><strong>Debalina Das, Panchla Mahavidyalaya, West Bengal</strong><br/>
+              Wading Through Bengal: Slow Violence, Coexistence and Ecological Collapse in Wade (2020) and the North Bengal Climate Crisis</li>
+
+              <li><em>Chair: Abhijit Gupta, Jadavpur University</em></li>
             </ul>
           </li>
+
+          <li>
+            <strong>12-130</strong> — <em>Session 2B: Amphitheatre East 100</em>
+            <ul>
+              <li><strong>Samriddhi Singh, Banaras Hindu University, Varanasi</strong><br/>
+              Ecofeminism and Solarpunk Speculations: Toward an Ethics of Regenerative Care</li>
+
+              <li><strong>Bhuvi Sharma, Loreto College, Kolkata</strong><br/>
+              Holograms of Survival: Speculative Maternalities and Climate Anxiety in “Of Holo Ma, without Maa”</li>
+
+              <li><strong>Ranjabati Chattopadhyay, Jadavpur University, Kolkata</strong><br/>
+              The Female Body as Archive: Tracing Resilience in Literature through Feminist Survivology</li>
+
+              <li><em>Chair: Nandita Roy, IIM Calcutta</em></li>
+            </ul>
+          </li>
+
+          <li><strong>130-230</strong> — Lunch</li>
+
+          <li>
+            <span class="schedule-speakers">Amphitheatre East 150</span>
+          </li>
+
+          <li>
+            <strong>230-315</strong> — <strong>Keynote 5: Rimi B. Chatterjee, novelist</strong>
+            <span class="schedule-speakers">
+              'The Antisense Universe, Survivology, and Civilizational Redesign'<br/>
+              <em>Discussant: Abhijit Gupta, Jadavpur Univrersity</em>
+            </span>
+          </li>
+
+          <li>
+            <strong>315-415</strong> — <strong>Panel 4: কল্পবিজ্ঞান কোন পথে? [Whither Kalpavigyan?]</strong>
+            <span class="schedule-speakers">
+              <strong>Soumya Sundar Mukhopadhyay, Soham Guha, Yashodhara Ray Chaudhuri, Dip Ghosh</strong><br/>
+              <em>Moderator: Riju Ganguly</em>
+            </span>
+          </li>
+
+          <li><strong>415-445</strong> — Tea</li>
+
+          <li>
+            <strong>445-615</strong> — <strong>Screening: Kalpavigyan: A Speculative Journey (2021)</strong>
+            <span class="schedule-speakers">
+              82 mins. Directed and written by Arunava Gangopadhyay and Bodhisattva Chattopadhyay
+            </span>
+          </li>
+        </ul>
+      </article>
+          </li>
+        </ul>
+      </article>
+
+      <!-- DAY 3 -->
+      <article class="day-card">
+        <h3>Day 3 — Sunday, 21 December 2025</h3>
+        <p class="muted">TEQIP Building, 3rd floor, Jadavpur University</p>
+        <ul>
+          <li>
+            <strong>10-11</strong> — <strong>Panel 5: অস্তিত্বের সংকট [Crisis of Existence]</strong>
+            <span class="schedule-speakers">
+              <strong>Anushtup Sett, Debojyoti Bhattacharya, Riju Ganguly, Saikat Mukhopadhyay</strong><br/>
+              <em>Moderator: Anindya Sengupta, Jadavpur University</em>
+            </span>
+          </li>
+
+          <li>
+            <strong>11-1145</strong> — <strong>Keynote 5: Barnita Bagchi, University of Amsterdam</strong>
+            <span class="schedule-speakers">
+              ‘Mobilities in Lila Majumdar’s Fantastic Works’<br/>
+              <em>Discussant: Abhijit Gupta, Jadavpur University</em>
+            </span>
+          </li>
+
+          <li><strong>1145-12</strong> — Coffee</li>
+
+          <li>
+            <strong>12-130</strong> — <em>Session 3A</em>
+            <ul>
+              <li><strong>Paromita Sarkar, Jawaharlal Nehru University, New Delhi</strong><br/>
+              Diclofenac Vultures and Destitution: Makings of Dalit Survivology in recent Anticaste SF</li>
+
+              <li><strong>Jayjit Sarkar, Raiganj University, West Bengal</strong><br/>
+              Decolonizing Survival at the End of the world: survivance, speculative fiction, speculative relations</li>
+
+              <li><strong>Dattatraya Das, Brainware University, Kolkata</strong><br/>
+              Reconfiguring AI Infrastructures: Actor-Networks, Freshwater Ethics, and Planetary Coexistence</li>
+
+              <li><em>Chair: Sulagna Chattopadhyay, Loreto College, Kolkata</em></li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>12-130</strong> — <em>Session 3B</em>
+            <ul>
+              <li><strong>Roopsa Upadhyaya, Jadavpur University, Kolkata</strong><br/>
+              Corporeal Purity and Climate Crisis: Gender, Violence, and the Politics of Purity in Prayaag Akbar's Leila</li>
+
+              <li><strong>Soumya Sur, IIT Mandi, Himachal Pradesh</strong><br/>
+              Childhood Futures: Ecocritical Reading of Doraemon's Cinematic Universe</li>
+
+              <li><strong>Upasana, Dr B.R. Ambedkar University, New Delhi</strong><br/>
+              Fire in the Mountain: Reading the Affective Imaginaries of Children's Climate Fiction in India</li>
+
+              <li><em>Chair: Nandita Roy, IIM Calcutta</em></li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>12-130</strong> — <em>Session 3C</em>
+            <ul>
+              <li><strong>Akriti Kujur, Jawaharlal Nehru University, New Delhi</strong><br/>
+              Reimagining the Human: Quantum Posthumanism and Climate Futures in Speculative Fiction</li>
+
+              <li><strong>Rubaiya Nasrin, Jadavpur University, Kolkata</strong><br/>
+              In the Womb of the World: Posthuman Reproduction and Ethical Survival in the Anthropocene</li>
+
+              <li><strong>Merin John, NIT Trichy, Tamil Nadu</strong><br/>
+              Divergent Visions of Multispecies Futures: Hope and Abjection in “The Songs that Humanity Lost Reluctantly to Dolphins” and “Ubhayajeeviyude Athmakadha”</li>
+
+              <li><em>Chair: Abhijit Gupta, Jadavpur University</em></li>
+            </ul>
+          </li>
+
           <li><strong>130-215</strong> — Lunch</li>
-          <li><strong>215-3</strong> — <strong>Keynote 3:</strong> <strong>Rimi B. Chatterjee</strong><br/><em>Discussant: [TBA]</em></li>
-          <li><strong>3-4</strong> — <strong>Book launch and discussion</strong><br/><strong>Anil Menon, Sami Ahmad Khan, Lavanya Lakshminarayan, Samit Basu</strong></li>
-          <li><strong>4-415</strong> — Tea</li>
-          <li><strong>415-5</strong> — <strong>Keynote 4:</strong> <strong>Suparno Banerjee</strong><br/><em>Moderator: Francesco Verso</em></li>
-          <li><strong>5-6</strong> — <strong>Plenary Panel 3:</strong> <strong>কল্পবিজ্ঞান কোন পথে? [Whither Kalpavigyan?]</strong><br/><strong>Soumya Sundar Mukhopadhyay, Soham Guha, Yashodhara Ray Chaudhuri, Dip Ghosh</strong><br/><em>Moderator: Riju Ganguly</em></li>
-          <li><strong>630</strong> — Board space shuttle to JU</li>
-        </ul>
-      </article>
 
-      <article class="day-card">
-        <h3>Sunday, 21 December 2025</h3>
-        <ul>
-          <li><strong>10-11</strong> — <strong>Plenary Panel 5:</strong> <strong>অস্তিত্বের সংকট [Crisis of Existence]</strong><br/><strong>Anushtup Sett, Debjyoti Bhattacharya, Riju Ganguly, Saikat Mukhopadhyay</strong><br/><em>Moderator: Anindya Sengupta</em></li>
-          <li><strong>11-1145</strong> — <strong>Keynote 3:</strong> <strong>Barnita Bagchi</strong><br/><em>Discussant: Abhijit Gupta</em></li>
-          <li><strong>1145-12</strong> — Coffee</li>
-          <li><strong>12-130</strong> — <em>Paper Sessions</em>
-            <ul style="margin-top: 8px; margin-bottom: 8px;">
-              <li style="margin-left: 20px;">Paper Session 4a: three papers</li>
-              <li style="margin-left: 20px;">Paper Session 4b: three papers</li>
-              <li style="margin-left: 20px;">Paper Session 4c: two/three papers</li>
-            </ul>
+          <li>
+            <strong>215</strong> — <strong>Kalpabigyan Writing Workshop:</strong>
+            <span class="schedule-speakers">
+              Debjyoti Bhattacharya, Soham Guha, Saikat Mukhopadhyay, Anushtup Sett and others<br/>
+              <span style="color: var(--muted);">[will continue through the afternoon]</span>
+            </span>
           </li>
-          <li><strong>130-230</strong> — Lunch</li>
-          <li><strong>215 onwards</strong> — <strong>Kalpabigyan Writing Workshop:</strong> Debjyoti Bhattacharya, Soham Guha, Saikat Mukhopadhyay, Anushtup Sett and others <span style="color: var(--muted);">[will continue through the afternoon]</span></li>
-          <li><strong>230-330</strong> — <strong>Plenary Panel 6: Day After Tomorrow</strong><br/><strong>Indrapramit Das, Sukanya Datta</strong><br/><em>Moderator: Anil Menon</em></li>
-          <li><strong>330-415</strong> — <strong>Repeat broadcast:</strong> <strong>'Sobuj Manush'</strong> [Green Men] after 60 years!<br/><span style="color: var(--muted);">feat. Adrish Bardhan, Premendra Mitra, Dilip Roychowdhury, Satyajit Ray</span></li>
+
+          <li>
+            <strong>215</strong> — <strong>Writing masterclass with Anil Menon</strong>
+          </li>
+
+          <li>
+            <strong>215</strong> — <strong>Surviving zombies/CBRN warfare in India: Survival 101 workshop with Sami Ahmed Khan</strong>
+            <span class="schedule-speakers">
+              <span style="color: var(--muted);">[limited places; may result in end of civilization as we know it]</span>
+            </span>
+          </li>
+
+          <li>
+            <strong>330-415</strong> — <strong>Repeat broadcast: 'Sobuj Manush'</strong> [Green Men] after 60 years!
+            <span class="schedule-speakers">
+              feat. Adrish Bardhan, Premendra Mitra, Dilip Roychowdhury, Satyajit Ray
+            </span>
+          </li>
+
           <li><strong>415-430</strong> — Long Dark Teatime of the Soul</li>
+
           <li><strong>430-530</strong> — <strong>Quiz and cosplay;</strong> Chewbacca impersonation contest</li>
+
           <li><strong>530-6</strong> — <strong>Valedictory</strong></li>
         </ul>
       </article>
+
     </section>
-
-    <p class="note"><strong>Parallel events (details to be announced later)</strong></p>
-
   </main>
 
   <footer class="site-footer">
@@ -113,3 +357,4 @@
   <script src="js/main.js"></script>
 </body>
 </html>
+```
